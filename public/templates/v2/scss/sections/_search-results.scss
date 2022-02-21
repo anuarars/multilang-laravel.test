@@ -1,0 +1,48 @@
+.search-results {
+  padding-top: 75px;
+}
+.search-results__date {
+  margin-bottom: 15px;
+}
+.search-results-content {
+  font-size: 16px;
+  line-height: 162%;
+}
+
+.sr-row {
+  margin-bottom: -90px;
+}
+
+.sr-col {
+  margin-bottom: 90px;
+}
+
+.search-results__title {
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+@media(max-width: 767px) {
+  .search-results__title {
+    font-size: 16px;
+    line-height: 162%;
+    max-width: 240px;
+    letter-spacing: 0.6px;
+  }
+  .search-results {
+    padding-top: 20px;
+  }
+  .search-results__title {
+    margin-bottom: 40px;
+  }
+  .search-results-content {
+    font-size: 14px;
+    line-height: 143%;
+  }
+  .sr-col {
+    margin-bottom: 40px;
+  }
+  .sr-row {
+    margin-bottom: -40px;
+  }
+}

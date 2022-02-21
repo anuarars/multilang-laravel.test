@@ -1,0 +1,9 @@
+div.linkbutton {
+     background: #c20012;
+     color: #fff;
+     font-size: 20px;
+     display: inline-block;
+     padding: 6px 30px;
+     border-radius: 20px;
+     cursor: pointer;
+ }

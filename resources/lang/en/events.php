@@ -1,0 +1,45 @@
+<?php
+return [
+    'no_scheduled_events' => 'No scheduled events',
+    'registration' => 'Registration',
+    'viewtranslation' => 'View translation',
+
+    'events' => 'Events',
+    'its_free' => '',
+    'description' => 'Event Description',
+    'statistic' => 'Statistics',
+    'speakers' => 'Speakers',
+    'participants' => 'Participants',
+    'questions' => 'Questions',
+    'speakers_list_past' => 'Presentations were made by',
+    'speakers_list_upcoming' => 'Presentations will be made by',
+    'event_registration' => 'Event registration',
+	'name' => 'Full Name',
+	'surname' => 'Surname',
+	'organization' => 'Organization',
+    'position' => 'Position',
+	'phone' => 'Phone',
+	'email' => 'E-mail',
+    'successfully_registered' => 'You have successfully registered',
+    'photo_report' => 'Photo report',
+    'gallery_show_all' => 'Show all',
+    'other' => 'Other events',
+
+    'events.heading' => 'Events',
+    'events.description' => 'The Center holds workshops and conferences on relevant topics with representatives of Russian and foreign public authorities, world renowned experts, judges of international courts.',
+    'events.filter' => 'Search',
+    'events.search' => 'Search',
+    'events.type' => 'Event type',
+    'events.date' => 'Date of event',
+    'events.upcoming' => 'Upcoming events',
+    'events.past' => 'Past Events',
+
+    'preview.photos' => 'Photo report',
+    'preview.stats' => 'Event statistic',
+
+    'confirmed' => 'Confirmed!',
+    'declined' => 'Declined!',
+    'duration' => 'Duration',
+    'format' => 'Format',
+    'type' => 'Type'
+];

@@ -1,0 +1,297 @@
+.publications {
+  margin-top: 80px;
+  &__main-title {
+    margin-bottom: 50px;
+    &--about {
+      font-family: var(--noto-font);
+      font-style: italic;
+      font-size: 14px;
+      line-height: 140%;
+    }
+
+    &--text {
+      font-family: var(--fair-font);
+      font-size: 62.5px;
+      line-height: 120%;
+      text-transform: uppercase;
+      @media (max-width: 575px) {
+        font-size: 42.5px;
+      }
+    }
+  }
+
+  &__item {
+    &--img {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      height: 330px;
+      margin-bottom: 40px;
+    }
+
+    &--title {
+      font-family: var(--fair-font);
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 133%;
+      margin-bottom: 40px;
+    }
+
+    &--content {
+      font-family: var(--main-font);
+      font-size: 15px;
+      line-height: 150%;
+      margin-bottom: 40px;
+    }
+
+    &--about {
+      font-size: 13px;
+      line-height: 138%;
+      color: #A9A8A8;
+    }
+  }
+
+  &__title {
+    margin-bottom: 79px;
+    margin-top: 180px;
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 111%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  &__item-date {
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 138%;
+    color: #A9A8A8;
+  }
+
+  &__item-content {
+    font-family: var(--noto-font);
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: -.1px;
+  }
+
+  &__item-about {
+    font-size: 13px;
+    line-height: 138%;
+    color: #A9A8A8;
+    margin-top: 10px;
+  }
+
+  &__professor {
+    display: flex;
+    align-items: center;
+    padding-right: 22px;
+    &--name {
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 138%;
+    }
+
+    &--rank {
+      font-size: 13px;
+      line-height: 138%;
+      color: #A9A8A8;
+    }
+
+    &--person {
+      margin-left: 15px;
+      margin-right: 24px;
+      margin-bottom: 12px;
+    }
+    &--signature {
+      position: relative;
+      top: -8px;
+    }
+  }
+
+  &__signature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 56px;
+
+    @media (max-width: 575px) {
+      display: grid;
+    }
+
+    &--about {
+      font-size: 13px;
+      line-height: 138%;
+      color: #A9A8A8;
+      max-width: 328px;
+
+      @media (max-width: 575px) {
+        order: 2;
+        max-width: unset;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+.publications__other {
+  .publications__item-date {
+    margin-bottom: 18px;
+  }
+}
+
+.publication-item {
+  display: block;
+  transition: .2s ease;
+  &:hover, &:focus {
+    transform: translateY(-15px);
+    .publications__item--date,
+    .publications__item--type {
+      color: var(--black);
+    }
+  }
+}
+
+.pub-item {
+  display: block;
+  transition: .2s ease;
+  &:hover, &:focus {
+    transform: translateY(-15px);
+    .publications__item-date {
+      color: var(--black);
+    }
+  }
+}
+
+.author-item {
+  display: block;
+  transition: .2s ease;
+  &:hover, &:focus {
+    transform: translateY(-15px);
+    .publications__item-about {
+      color: var(--black);
+    }
+  }
+}
+
+@include tablet {
+  .publications {
+    margin-top: 60px;
+  }
+  .publications__main-title {
+    margin-bottom: 70px;
+  }
+  .publications__item--img {
+    height: auto;
+    max-height: initial;
+    margin-bottom: 21px;
+  }
+  .publications__item--title,
+  .publications__item--content {
+    br {
+      display: none;
+    }
+  }
+  .publications__item--content {
+    margin-bottom: 30px;
+  }
+  .publication__col {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+  .publications__title {
+    margin-top: 140px;
+    margin-bottom: 70px;
+  }
+  .publications__item-date {
+    margin-bottom: 15px;
+  }
+  .covid-col {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+  .publications__item-content {
+    br {
+      display: none;
+    }
+  }
+  .publications__trade {
+    .publications__title {
+      margin-bottom: 46px;
+    }
+  }
+  .trade-col {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+  .publications__author {
+    .publications__title {
+      margin-bottom: 45px;
+    }
+  }
+  .author-col {
+    .publications__item-content {
+      margin-bottom: 16px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+  .publications__signature {
+    margin-top: 34px;
+  }
+  .publications__professor {
+    padding-right: 0;
+  }
+  .publications__professor--signature {
+    right: -31px;
+  }
+  .publications__other {
+    .publications__title {
+      margin-bottom: 45px;
+    }
+  }
+  .other-col {
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
+  }
+  .publications__other .publications__item-date {
+    margin-bottom: 17px;
+  }
+}
+
+@include tabletUpToMobile {
+  .publications__item--title {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 133%;
+  }
+}
+
+@include mobile {
+  .publications {
+    margin-top: 20px;
+  }
+
+  .publications__main-title {
+    margin-bottom: 59px;
+  }
+
+  .publications__item--title {
+    margin-bottom: 21px;
+  }
+
+  .publications__item--content {
+    margin-bottom: 20px;
+  }
+
+  .publications__title {
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+}

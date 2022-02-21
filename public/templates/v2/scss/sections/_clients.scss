@@ -1,0 +1,137 @@
+.clients {
+  padding-top: 22px;
+}
+
+.clients__title {
+  margin-bottom: 80px;
+  margin-top: 0;
+}
+
+.chart-info {
+  margin-top: 49px;
+  counter-reset: chartItem;
+  h4 {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.chart-item {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 207px;
+  padding-left: 37px;
+  position: relative;
+  strong {
+    font-weight: 600;
+    line-height: 120%;
+  }
+  span {
+    font-weight: normal;
+    line-height: 150%;
+  }
+  &::before {
+    content: counter(chartItem);
+    counter-increment: chartItem;
+    position: absolute;
+    left: 3px;
+    top: 1px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 138%;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &:last-child {
+    margin-top: 11px;
+  }
+}
+
+.chart__text {
+  font-weight: normal;
+  margin-top: 57px;
+  margin-bottom: 0;
+  margin-left: 2px;
+}
+
+.government-title {
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.clients-row {
+  counter-reset: clientsItem;
+}
+
+.clients-item {
+  &::before {
+    content: '0'counter(clientsItem);
+    counter-increment: clientsItem;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 138%;
+    display: block;
+    color: var(--gray);
+  }
+
+}
+
+.clients-item__text {
+  max-width: 241px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.clients-row {
+  margin-bottom: -30px;
+}
+
+.clients-col {
+  margin-bottom: 30px;
+  &:nth-child(n+10) {
+    .clients-item::before {
+      content: counter(clientsItem);
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  .clients {
+    margin-top: -50px;
+  }
+  .clients__title {
+    margin-bottom: 58px;
+  }
+  .chart-info h4 {
+    margin-top: -7px;
+    margin-bottom: 29px;
+  }
+  .chart-item {
+    max-width: 165px;
+    margin-left: -3px;
+  }
+  .chart__text {
+    margin-top: 44px;
+    margin-left: -2px;
+  }
+  .clients-col {
+    margin-bottom: 40px;
+  }
+  .clients-row {
+    margin-bottom: -40px;
+  }
+  .clients-item__text {
+    max-width: 100%;
+  }
+  .clients-row + .government-title {
+    margin-top: 123px;
+    
+  }
+}

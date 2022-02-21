@@ -1,0 +1,56 @@
+<?php
+return [
+    'events.heading' => 'Upcoming event',
+    'events.description' => 'The Center holds workshops and conferences on relevant topics with representatives of Russian and foreign public authorities, world-renowned experts, judges of international courts.',
+    'events.more' => 'All Events',
+
+    'school.heading' => 'The Summer School on Public International Law',
+    'school.text' => 'Through the courses delivered by the leading academicians and practitioners the Summer School on Public International Law provides those dealing with or planning to deal with Public International Law with an opportunity to get advanced knowledge of the subject and encourages participants to work additionally on their own.',
+    'school.date' => 'August 2-13, 2021',
+    'school.link1' => 'Programme and Experts',
+    'school.link2' => 'Main information',
+
+    'research.heading1' => 'Public International Law',
+    'research.description1' => '',
+    'research.ticker1-1' => 'International law and the Arctic',
+    'research.ticker1-2' => 'Sanctions and countermeasures: international law and implementation at the national level',
+    'research.ticker1-3' => 'Territorial disputes and their resolution options',
+    'research.ticker1-4' => 'International law and foreign investments',
+    'research.ticker1-5' => 'International law in the area of climate change and the protection of the environment',
+    'research.ticker1-6' => 'Other matters of public concern affecting the Russian Federation and big business in Russia',
+	'research.ticker1-7' => 'International law and access to the World Ocean resources',
+	'research.ticker1-8' => 'Current issues of international humanitarian law',
+	'research.ticker1-9' => 'International law and international trade',
+	'research.ticker1-10' => 'Implementation of international law in Russia',
+
+    'research.heading2' => 'Private International Law and Comparative Law',
+    'research.description2' => '',
+    'research.ticker2-1' => 'New approaches to certification and standardization of innovative materials and technologies',
+    'research.ticker2-2' => 'Securitization methods',
+    'research.ticker2-3' => 'Digital economy and digitalization of legal relations',
+    'research.ticker2-4' => 'Legal regulation of national and cross-border insolvency',
+    'research.ticker2-5' => 'Alternative (out-of-court) dispute resolution',
+	'research.ticker2-6' => 'Legal regulation of financing contractual models',
+	'research.ticker2-7' => 'Improvement of private-public partnership and concession mechanisms',
+	'research.ticker2-8' => 'Legal regulation of technology consortia',
+	'research.ticker2-9' => 'Legal regulation of financial technology (FinTech)',
+	'research.ticker2-10' => 'Other matters of public concern affecting the Russian Federation and big business in Russia',
+	'research.ticker2-11' => 'Improvement of legal regulation of financial markets, including derivatives and securities markets (legal prerequisites for creation of financial infrastructure)',
+
+    'award.pre' => 'Award',
+    'award.title' => 'International law<br>in the XXI Century',
+    'award.text' => 'International and Comparative Law Research Center is the organizer of the International Law in the XXI Century Award for the best research paper on public international law',
+    'award.price' => '300,000 RUB',
+    'award.date' => 'by March 9, 2021',
+
+    'library.heading'   => 'Library',
+    'library.description' => 'The Center’s unique constantly replenished library contains more than 6.7 thousand books on international public and private law, and comparative law on various languages.',
+    'library.text1' => 'The library database is continuously updated with due regard to the needs and recommendations from researches and readers.',
+    'library.text2' => 'Access is provided only with the library card.',
+
+    'news.heading' => 'News',
+    'news.more' => 'All news',
+    'news.open' => 'More',
+    'news.close' => 'Close',
+    'events' => 'Events'
+];

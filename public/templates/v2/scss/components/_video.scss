@@ -1,0 +1,132 @@
+.video-wrap {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.video {
+  box-sizing: border-box;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 55.4%;
+  border-radius: 20px;
+  &:hover {
+    .video__img, .video__iframe {
+      filter: grayscale(0);
+    }
+  }
+}
+
+
+.video__img, .video__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  filter: grayscale(95%);
+  transition: .2s ease;
+  @media(max-width: 767px) {
+    border-radius: 10px;
+  }
+}
+
+.video__img {
+  z-index: 1;
+  filter: grayscale(95%);
+}
+
+.video__iframe {
+  z-index: 2;
+  appearance: none;
+}
+
+.video__play {
+  position: absolute;
+  bottom: 23px;
+  left: 23px;
+  z-index: 2;
+  cursor: pointer;
+  background-color: var(--green);
+  color: #fff;
+  padding-left: 18px;
+  padding-right: 18px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: .2s ease;
+  span {
+    transition: .2s ease;
+    line-height: 34px;
+  }
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.video-wrap__text {
+  font-weight: normal;
+  display: block;
+  margin-top: 30px;
+}
+
+.video__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  .video__play {
+    position: static;
+  }
+}
+
+.video__time {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 138%;
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  transition: .2s ease;
+}
+
+@include tablet {
+  .video-wrap__text {
+
+    br {
+      display: none;
+    }
+  }
+  .video__play {
+    bottom: 15px;
+    left: 15px;
+  }
+  .video {
+    border-radius: 10px;
+  }
+}
+
+@include mobile {
+  .video-wrap {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .video-wrap__text {
+    margin-top: 20px;
+  }
+  .video__play {
+    bottom: 15px;
+    left: 15px;
+  }
+}

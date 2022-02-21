@@ -1,0 +1,555 @@
+.projects-law {
+  margin-top: -6px;
+  sup {
+    font-size: 11px;
+    top: -0.8em;
+  }
+}
+
+.projects-law__title {
+  margin-top: 0;
+  margin-bottom: 58px;
+}
+
+.projects-law__subtitle {
+  margin-top: 98px;
+  margin-bottom: 60px;
+}
+
+.projects-law__list {
+  margin: 0;
+  padding-left: 23px;
+  max-width: 530px;
+  margin-top: 27px;
+}
+
+.projects-law__text {
+  max-width: 530px;
+  margin-bottom: 0;
+  margin-top: 26px;
+}
+
+.pf-title {
+  margin-bottom: 61px;
+  margin-top: 101px;
+}
+
+.pf-item {
+  display: block;
+  transition: .2s ease;
+  &:hover {
+    transform: translateY(-15px);
+    .pf-item__top {
+      color: var(--black)
+    }
+  }
+}
+
+.pf-item__top {
+  font-weight: normal;
+  display: block;
+  margin-bottom: 17px;
+}
+
+.pf-item__text {
+  margin: 0;
+  line-height: 150%;
+}
+
+.pf-row {
+  margin-bottom: -66px;
+}
+
+.pf-col {
+  margin-bottom: 66px;
+}
+
+.pp-title {
+  margin-top: 102px;
+  margin-bottom: 60px;
+}
+
+.pl-item {
+  display: flex;
+  flex-direction: column;
+  &:not(:last-child) {
+    margin-bottom: 17px;
+  }
+  &--social {
+    a {
+      line-height: 157%;
+    }
+  }
+}
+
+
+
+.pl-item__title {
+  display: block;
+  font-weight: normal;
+  line-height: 128%;
+}
+
+.pl-item__text {
+  margin: 0;
+  line-height: 148%;
+}
+
+.projects-law__aside {
+  margin-top: 12px;
+}
+
+.pl-top {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--gray);
+  width: max-content;
+}
+
+.pl-top__text {
+  margin-bottom: 0;
+  margin-top: 20px;
+  line-height: 150%;
+}
+
+.pl-top__image {
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 120px;
+  max-width: 120px;
+}
+
+
+
+.pl-council__img {
+  max-width: 54px;
+  height: 56px;
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.pl-council__title {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 146%;
+  display: block;
+}
+
+.pl-council__left {
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.pl-counsil__rank {
+  font-size: 13px;
+  line-height: 138%;
+  color: var(--gray);
+}
+
+.pl-council__text {
+  margin: 0;
+  font-weight: normal;
+  gap: 36px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  line-height: 150%;
+}
+
+.pw-title {
+  margin-top: 101px;
+  margin-bottom: 61px;
+}
+
+.winner {
+  position: relative;
+  .more-link {
+    font-weight: normal;
+    color: var(--gray);
+    font-size: 13px;
+    line-height: 138%;
+    &:hover, &.active {
+      color: var(--black);
+    }
+    svg {
+      margin-top: 0;
+    }
+  }
+  .video {
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s ease;
+    &.active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.winner__title {
+  display: block;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.winner__year {
+  font-weight: normal;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.winner__img {
+  flex-shrink: 0;
+  max-width: 54px;
+  position: relative;
+  margin-right: 15px;
+}
+
+.winner__top {
+  position: relative;
+}
+
+
+.winner__year {
+  position: relative;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.winner__text {
+  max-width: 206px;
+  margin-top: 13px;
+  margin-bottom: 21px;
+  line-height: 155%;
+}
+
+.winner__link {
+  display: flex;
+  cursor: pointer;
+}
+
+.pw-row {
+  margin-bottom: -61px;
+}
+
+.pw-col {
+  margin-bottom: 61px;
+}
+
+.more-link {
+  display: inline-flex;
+  align-items: center;
+  line-height: 150%;
+  cursor: pointer;
+  svg {
+    margin-left: 10px;
+    transition: .2s ease;
+  }
+  path {
+    transition: .2s ease;
+  }
+  &:hover, &.active {
+    svg {
+      transform: rotate(45deg);
+    }
+    g {
+      opacity: 1;
+    }
+    path {
+      stroke: var(--black);
+    }
+  }
+  &--text {
+    display: inline;
+    margin-right: 5px;
+    svg {
+      margin-top: 6px;
+      margin-left: 0;
+    }
+  }
+}
+
+.more-link__law {
+  margin-bottom: 60px;
+}
+
+.video-wrap__law {
+  margin-bottom: 20px;
+}
+
+.law__btn {
+  margin-top: 17px;
+}
+
+.pl-item__text--prize {
+  strong {
+    font-family: 'Eund', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 146%;
+    &::before {
+      content: '₽';
+      margin-right: 5px;
+      line-height: 150%;
+    }
+  }
+}
+
+.winner__video {
+  position: absolute;
+  height: 162px;
+  left: 0;
+  right: 0;
+  top: 82px;
+  .video,
+  .video__img,
+  .video__iframe {
+    border-radius: 10px;
+  }
+  .video__img {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.winner__article-title {
+  font-weight: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.winner__article {
+  max-width: 215px;
+  .more-link {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 140%;
+    font-family: var(--noto-font);
+    color: var(--black);
+    margin-right: 0;
+    svg {
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.video-wrap__law {
+  max-width: 528px;
+}
+
+.page-header--law {
+  padding-top: 107px;
+}
+
+.projects-law__list {
+  .research__list {
+    padding-left: 26px;
+  }
+}
+
+.council-title {
+  font-size: 13px;
+  line-height: 138%;
+  color: var(--gray);
+  margin-bottom: 5px;
+  font-weight: normal;
+  display: block;
+}
+
+.council-btn {
+  font-size: 15px;
+  line-height: 152%;
+  display: inline-block;
+  border-left: 2px solid transparent;
+  transition: .2s ease;
+  cursor: pointer;
+  &.active {
+    border-color: var(--black);
+    padding-left: 8px;
+  }
+}
+
+.pl-council {
+  margin-top: 10px;
+}
+
+.council-list {
+  li {
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.council-pagination {
+  .pagination__btns {
+    display: none;
+  }
+}
+
+.pl-counsil__list {
+  min-height: 240px;
+  margin-bottom: 61px;
+}
+
+.pl-counsil__list {
+  min-height: initial;
+}
+
+.pl-counsil__list {
+  margin-bottom: 0;
+}
+
+.projects-law__aside .projects-law__title {
+  display: none;
+}
+
+
+@media(max-width: 767px) {
+  .projects-law__row {
+    flex-direction: column-reverse;
+  }
+  .projects-law__title {
+    display: none;
+    margin-bottom: 37px;
+  }
+  .projects-law__aside .projects-law__title {
+    display: block;
+    padding-right: 10px;
+  }
+  .projects-law {
+    margin-top: -16px;
+  }
+  .pl-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+  }
+  .pl-top__text {
+    margin-top: 13px;
+  }
+  .pl-item {
+    flex-direction: row;
+    max-width: 200px;
+  }
+  .pl-item__title {
+    max-width: 121px;
+    margin-right: 16px;
+    width: 100%;
+  }
+  .pl-item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  .pl-item__text {
+    margin-top: -2px;
+    br {
+      display: block;
+    }
+  }
+  .pl-item:nth-of-type(4) {
+    margin-bottom: 34px;
+  }
+  .pl-item:nth-of-type(5),
+  .pl-item:nth-of-type(6),
+  .pl-item:nth-of-type(7) {
+    margin-bottom: 22px;
+  }
+  .pl-item--social {
+    .pl-item__group {
+      padding-left: 10px;
+    }
+  }
+  .pl-item--social a {
+    line-height: 150%;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+  .law__btn {
+    height: 55px;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .video-wrap {
+    margin-top: 47px;
+  }
+  .video-wrap__law {
+    margin-bottom: 20px;
+  }
+  .more-link__law {
+    margin-bottom: 41px;
+  }
+  .projects-law__subtitle {
+    margin-top: 101px;
+    margin-bottom: 39px;
+  }
+  .projects-law__list {
+    margin-top: 25px;
+  }
+  .pw-title {
+    margin-bottom: 39px;
+  }
+  .winner__text {
+    max-width: 100%;
+  }
+  .winner__text {
+    margin-top: 12px;
+  }
+  .winner__text {
+    margin-bottom: 19px;
+  }
+  .winner__article {
+    max-width: 100%;
+  }
+  .winner__article .more-link {
+    br {
+      display: none;
+    }
+  }
+  .winner__article .more-link svg {
+    margin-left: 1px;
+  }
+  .pw-col {
+    margin-bottom: 79px;
+  }
+  .pw-row {
+    margin-bottom: -79px;
+  }
+  .winner__article-title {
+    margin-bottom: 4px;
+  }
+  .pf-title {
+    margin-bottom: 41px;
+    margin-top: 83px;
+  }
+  .pf-item__top {
+    margin-bottom: 14px;
+  }
+  .pf-row {
+    margin-bottom: -42px;
+  }
+  .pf-col {
+    margin-bottom: 42px;
+  }
+  .pf-title {
+    margin-top: 100px;
+  }
+  .pp-title {
+    margin-bottom: 36px;
+    + .row {
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px 20px;
+      > * {
+        padding: 0;
+      }
+    }
+  }
+  .partner__name {
+    margin-top: 8px;
+  }
+}

@@ -1,0 +1,23 @@
+<?php
+return [
+    'library.title' => '',
+    'library.fill' => '',
+    'library.wait' => '',
+    'library.go' => '',
+    'library.date_in' => '',
+    'library.time_in' => '',
+    'library.time_out' => '',
+    'library.success' => '',
+    'form.title' => 'Recommend a book',
+    'form.about' => 'You can recommend a book or an electronic database for the Library',
+    'form.full_name' => 'Full name',
+    'form.position' => 'Position',
+    'form.mail' => 'E-mail',
+    'form.phone' => 'Phone',
+    'form.book' => 'Title of the book or database',
+    'form.author' => 'Author',
+    'form.year' => 'Year of publication',
+    'form.url' => 'URL',
+    'form.personal_data' => 'I agree to the processing of my personal data',
+    'form.btn' => 'To recommend',
+];

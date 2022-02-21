@@ -1,0 +1,280 @@
+.events-page {
+  margin-top: -18px;
+  padding-bottom: 200px;
+
+  .research__text + .research__text {
+    margin-top: 25px;
+  }
+  .research__list + .research__text {
+    margin-top: 25px;
+  }
+
+  .other-news__col {
+    margin-bottom: 0;
+  }
+}
+
+.events-page__title {
+  margin-bottom: 58px;
+  margin-top: 0;
+}
+
+.video-wrap--live {
+  .video__play {
+    background-color: var(--red);
+  }
+  .video {
+    padding: 0;
+    height: 304px;
+  }
+  margin-top: 0;
+}
+
+.video__live {
+  position: absolute;
+  top: 34px;
+  left: 24px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: block;
+    background-color: var(--red);
+    margin-right: 16px;
+  }
+}
+
+.events__btn {
+  margin-top: 20px;
+}
+
+.lh150 {
+  line-height: 150%;
+}
+
+.speakers {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -40px;
+}
+.speaker {
+  display: flex;
+  min-width: 241px;
+  margin-bottom: 40px;
+}
+.speaker__img {
+  flex-shrink: 0;
+  max-height: 56px;
+  margin-right: 15px;
+}
+.speaker__info {
+  h4 {
+    margin: 0;
+  }
+  span {
+    font-weight: normal;
+    display: block;
+    margin-top: 1px;
+  }
+}
+
+.tickets {
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tickets__btn {
+  border: 1px solid var(--black);
+  border-radius: 50%;
+  width: 21px;
+  height: 21px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 100%;
+  &--minus {
+    span {
+      position: relative;
+      top: -1px;
+    }
+  }
+}
+
+.event-page__bottom {
+  margin-top: 57px;
+  max-width: 324px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-item {
+  img {
+    margin: 0 auto 30px;
+    display: block;
+
+    max-height: 71px;
+    height: 100%;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 5px;
+    line-height: 142%;
+  }
+  span {
+    font-weight: normal;
+  }
+}
+
+.event-page__title {
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+@include tablet {
+  .events-page {
+    padding-bottom: 180px;
+  }
+
+  .events__btn{
+    margin-top: 0;
+  }
+}
+
+@include tabletUpToMobile {
+  .event-page__bottom {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 70px;
+
+    max-width: unset;
+    padding-bottom: 20px;
+  }
+
+
+  .event-item {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 15px;
+
+    img {
+      align-self: center;
+      grid-row: 1 / 3;
+      min-width: 71px;
+      margin: 0;
+      object-fit: contain;
+    }
+
+    p {
+      align-self: flex-end;
+    }
+  }
+
+  .research__col {
+    margin-bottom: 0 !important;
+  }
+}
+
+@include mobile {
+  .events-page {
+    padding-bottom: 50px;
+  }
+
+  .events-page__title {
+    line-height: 136%;
+    margin-bottom: 41px;
+    br {
+      display: none;
+    }
+  }
+  .events-row {
+    .research__col {
+      margin-bottom: 0;
+    }
+  }
+  .tickets {
+    width: 86px;
+    margin-left: 3px;
+    margin-top: -7px;
+  }
+  .tickets__btn {
+    width: 30px;
+    height: 30px;
+    font-weight: 600;
+    position: relative;
+  }
+  .video-wrap--live .video {
+    height: 170px;
+  }
+  .video-wrap {
+    margin-top: 18px;
+  }
+  .video__live {
+    top: 15px;
+    left: 15px;
+  }
+  .speaker {
+    margin-bottom: 30px;
+  }
+  .speakers {
+    margin-bottom: -30px;
+    padding-bottom: 32px;
+  }
+  .research__text + .research__list {
+    padding-left: 24px;
+  }
+  .other-events {
+    margin-top: 100px;
+  }
+  .event-page__title {
+    margin-bottom: 39px;
+  }
+  .event-page__bottom {
+    max-width: 240px;
+  }
+}
+
+@include mobile {
+  .events__btn {
+    margin-top: 18px;
+    width: 100%;
+    height: 55px;
+  }
+
+  .events-row {
+    .research__col {
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-bottom: 16px;
+      }
+      &:nth-child(4) {
+        margin-bottom: 22px;
+      }
+      &:nth-child(5) {
+        margin-bottom: 15px;
+      }
+      &:nth-child(6) {
+        margin-bottom: 22px;
+      }
+      &:nth-child(7) {
+        br {
+          display: none;
+        }
+      }
+      &:nth-child(8) {
+        margin-bottom: 19px;
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+h1, .h1 {
+  font-family: var(--fair-font);
+  font-size: 62.5px;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-weight: normal;
+}
+
+h2, .h2 {
+  font-family: var(--fair-font);
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+h3, .h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 111%;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+h4, .h4 {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 146%;
+  letter-spacing: 0;
+}
+
+h5, .h5 {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 138%;
+  letter-spacing: 0;
+}
+
+.gray {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 138%;
+  letter-spacing: 0;
+  color: var(--gray);
+}
+
+p {
+	font-size: 15px;
+	line-height: 133%;
+}
+
+.serif {
+  font-family: var(--noto-font);
+  font-size: 14px;
+  line-height: 143%;
+}
+
+.serif-big {
+  font-family: var(--noto-font);
+  font-size: 16px;
+  line-height: 163%;
+}
+
+.italic {
+  font-family: var(--noto-font);
+  font-style: italic;
+  font-size: 14px;
+  line-height: 140%;
+}
